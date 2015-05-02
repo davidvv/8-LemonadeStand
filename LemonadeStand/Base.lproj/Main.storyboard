@@ -31,22 +31,13 @@
                                     <rect key="frame" x="35" y="59" width="98" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-dz-bVU">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="98" width="68" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvr-ER-kRg">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="59" width="42" height="21"/>
+                                    <rect key="frame" x="198" y="59" width="170" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice cubes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZJ-Q5-VW3">
@@ -55,7 +46,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="138" width="81" height="21"/>
+                                    <rect key="frame" x="198" y="136" width="170" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mix your lemonade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R63-AT-4Ea">
@@ -104,7 +95,7 @@
                                     <rect key="frame" x="219" y="234" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="buyLessLemonsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbQ-Ue-BUT"/>
+                                    <action selector="buyLessLemonsButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="6vw-5i-ygo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvl-4A-Esw">
@@ -126,6 +117,15 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="255" y="238" width="84" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bICubes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-5m-65V">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="259" y="290" width="76" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a3-Ui-8u9">
@@ -244,19 +244,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="18" y="615" width="352" height="57"/>
+                                    <rect key="frame" x="16" y="542" width="352" height="57"/>
                                 </variation>
                                 <connections>
                                     <action selector="startDayButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5i-zB-QJn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bICubes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-5m-65V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-dz-bVU">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="259" y="290" width="76" height="21"/>
+                                    <rect key="frame" x="198" y="99" width="170" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -265,7 +265,6 @@
                             <mask key="subviews">
                                 <exclude reference="tMv-LL-5Pl"/>
                                 <exclude reference="mpr-By-hZW"/>
-                                <exclude reference="m6B-dz-bVU"/>
                                 <exclude reference="pvr-ER-kRg"/>
                                 <exclude reference="TZJ-Q5-VW3"/>
                                 <exclude reference="R63-AT-4Ea"/>
@@ -275,6 +274,7 @@
                                 <exclude reference="vzl-1f-Lu9"/>
                                 <exclude reference="vvl-4A-Esw"/>
                                 <exclude reference="2Mb-eZ-Ee8"/>
+                                <exclude reference="TbF-5m-65V"/>
                                 <exclude reference="6a3-Ui-8u9"/>
                                 <exclude reference="E0d-gz-Ksj"/>
                                 <exclude reference="00x-3d-9p3"/>
@@ -286,14 +286,13 @@
                                 <exclude reference="6Ch-Gv-8et"/>
                                 <exclude reference="niN-Dp-qhO"/>
                                 <exclude reference="F3j-yD-NQk"/>
-                                <exclude reference="TbF-5m-65V"/>
+                                <exclude reference="m6B-dz-bVU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="tMv-LL-5Pl"/>
                                 <include reference="mpr-By-hZW"/>
-                                <include reference="m6B-dz-bVU"/>
                                 <include reference="pvr-ER-kRg"/>
                                 <include reference="TZJ-Q5-VW3"/>
                                 <include reference="R63-AT-4Ea"/>
@@ -303,6 +302,7 @@
                                 <include reference="vzl-1f-Lu9"/>
                                 <include reference="vvl-4A-Esw"/>
                                 <include reference="2Mb-eZ-Ee8"/>
+                                <include reference="TbF-5m-65V"/>
                                 <include reference="6a3-Ui-8u9"/>
                                 <include reference="E0d-gz-Ksj"/>
                                 <include reference="00x-3d-9p3"/>
@@ -314,7 +314,7 @@
                                 <include reference="6Ch-Gv-8et"/>
                                 <include reference="niN-Dp-qhO"/>
                                 <include reference="F3j-yD-NQk"/>
-                                <include reference="TbF-5m-65V"/>
+                                <include reference="m6B-dz-bVU"/>
                             </mask>
                         </variation>
                     </view>
