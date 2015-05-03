@@ -149,7 +149,10 @@ class ViewController: UIViewController {
     //no dejar que funcione si no tienes al menos un limón y un cubito de hielo
     @IBAction func startDayButtonPressed() {
         haveCash += GameBrain.acidityMatch(Factory.customerArrayCreator(), acidityMixString: GameBrain.acidityCalculator(mixLemon, mixIce: mixIce))
-        
+        mixIce = 0
+        mixLemon = 0
+        buyIce = 0
+        buyLemons = 0
         updateView()
 
 
