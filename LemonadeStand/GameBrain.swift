@@ -25,7 +25,9 @@ class GameBrain{
             acidityMixString = "medium"
             let acidityRange = 2
         }
+        println("aciditycalculator did Run: \(acidityMixString)")
         return acidityMixString!
+
     }
     
     class func acidityMatch(customers:[Customer], acidityMixString: String) -> Int {
@@ -36,6 +38,7 @@ class GameBrain{
                 buyers += 1
             }
         }
+        println("\(buyers) customers bought lemonade")
         return buyers
     }
 }
