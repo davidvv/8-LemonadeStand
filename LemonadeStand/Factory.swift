@@ -52,26 +52,5 @@ class Factory {
         return customer!
     }
     
-    class func acidityCalculator(mixLemon: Int, mixIce: Int) -> String {
-        var acidityMix: Double = Double(mixIce) / Double(mixLemon)
-        var acidityMixString: String?
-        if acidityMix < 0.4 {
-            acidityMixString = "acid"
-            let acidityRange = 1
-        }
-        else if acidityMix > 0.6 {
-            acidityMixString = "diluted"
-            let acidityRange = 3
-        }
-        else {
-            acidityMixString = "medium"
-            let acidityRange = 2
-        }
-        return acidityMixString!
-    }
-    
-    class func acidityMatch(){
-        
-    }
-
 }
+

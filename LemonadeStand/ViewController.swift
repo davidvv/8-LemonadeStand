@@ -148,6 +148,11 @@ class ViewController: UIViewController {
     //Start day action
     //no dejar que funcione si no tienes al menos un limón y un cubito de hielo
     @IBAction func startDayButtonPressed() {
+        Factory.weather()
+        Factory.customerArrayCreator()
+        GameBrain.acidityCalculator(mixLemon, mixIce: mixIce)
+     //   GameBrain.acidityMatch(customers, acidityMixString: <#String#>)
+        
     }
     
     
