@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Weather ImageViews
+    @IBOutlet weak var weatherImageView1: UIImageView!
+    @IBOutlet weak var weatherImageView2: UIImageView!
+    @IBOutlet weak var weatherImageView3: UIImageView!
+    @IBOutlet weak var weatherImageView4: UIImageView!
+    
     //HAVE labels:
     @IBOutlet weak var haveCashLabel: UILabel!
     @IBOutlet weak var haveLemonsLabel: UILabel!
@@ -111,12 +117,32 @@ class ViewController: UIViewController {
     
     //MIX actions
     @IBAction func mixLessLemonsButtonPressed() {
+        if mixLemon > 0 {
+            haveLemons += 1
+            mixLemon -= 1
+            updateView()
+        }
     }
     @IBAction func mixMoreLemonsButtonPressed() {
+        if haveLemons > 0 {
+            haveLemons -= 1
+            mixLemon += 1
+            updateView()
+        }
     }
     @IBAction func mixLessIceButtonPressed() {
+        if mixIce > 0 {
+            haveIce += 1
+            mixIce -= 1
+            updateView()
+        }
     }
     @IBAction func mixMoreIcebuttonPressed() {
+        if haveIce > 0 {
+            haveIce -= 1
+            mixIce += 1
+            updateView()
+        }
     }
     
     //Start day action

@@ -19,7 +19,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMv-LL-5Pl">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <rect key="frame" x="16" y="59" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MyF-4e-7xZ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="200" y="300" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-Id-kzX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="364" width="170" height="170"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-18-gMR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="230" y="122" width="170" height="170"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpr-By-hZW">
@@ -29,6 +47,15 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="35" y="59" width="98" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-dz-bVU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="99" width="170" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvr-ER-kRg">
@@ -110,15 +137,6 @@
                                     <action selector="buyMoreLemonsButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBF-BR-gtF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bLemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mb-eZ-Ee8">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="255" y="238" width="84" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bICubes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-5m-65V">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -250,13 +268,13 @@
                                     <action selector="startDayButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5i-zB-QJn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-dz-bVU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bLemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mb-eZ-Ee8">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="198" y="99" width="170" height="21"/>
+                                    <rect key="frame" x="255" y="238" width="84" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -264,7 +282,11 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="tMv-LL-5Pl"/>
+                                <exclude reference="MyF-4e-7xZ"/>
+                                <exclude reference="CSF-Id-kzX"/>
+                                <exclude reference="UIL-18-gMR"/>
                                 <exclude reference="mpr-By-hZW"/>
+                                <exclude reference="m6B-dz-bVU"/>
                                 <exclude reference="pvr-ER-kRg"/>
                                 <exclude reference="TZJ-Q5-VW3"/>
                                 <exclude reference="R63-AT-4Ea"/>
@@ -273,7 +295,6 @@
                                 <exclude reference="yda-J0-Jls"/>
                                 <exclude reference="vzl-1f-Lu9"/>
                                 <exclude reference="vvl-4A-Esw"/>
-                                <exclude reference="2Mb-eZ-Ee8"/>
                                 <exclude reference="TbF-5m-65V"/>
                                 <exclude reference="6a3-Ui-8u9"/>
                                 <exclude reference="E0d-gz-Ksj"/>
@@ -286,13 +307,17 @@
                                 <exclude reference="6Ch-Gv-8et"/>
                                 <exclude reference="niN-Dp-qhO"/>
                                 <exclude reference="F3j-yD-NQk"/>
-                                <exclude reference="m6B-dz-bVU"/>
+                                <exclude reference="2Mb-eZ-Ee8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="tMv-LL-5Pl"/>
+                                <include reference="MyF-4e-7xZ"/>
+                                <include reference="CSF-Id-kzX"/>
+                                <include reference="UIL-18-gMR"/>
                                 <include reference="mpr-By-hZW"/>
+                                <include reference="m6B-dz-bVU"/>
                                 <include reference="pvr-ER-kRg"/>
                                 <include reference="TZJ-Q5-VW3"/>
                                 <include reference="R63-AT-4Ea"/>
@@ -301,7 +326,6 @@
                                 <include reference="yda-J0-Jls"/>
                                 <include reference="vzl-1f-Lu9"/>
                                 <include reference="vvl-4A-Esw"/>
-                                <include reference="2Mb-eZ-Ee8"/>
                                 <include reference="TbF-5m-65V"/>
                                 <include reference="6a3-Ui-8u9"/>
                                 <include reference="E0d-gz-Ksj"/>
@@ -314,7 +338,7 @@
                                 <include reference="6Ch-Gv-8et"/>
                                 <include reference="niN-Dp-qhO"/>
                                 <include reference="F3j-yD-NQk"/>
-                                <include reference="m6B-dz-bVU"/>
+                                <include reference="2Mb-eZ-Ee8"/>
                             </mask>
                         </variation>
                     </view>
@@ -326,6 +350,10 @@
                         <outlet property="haveLemonsLabel" destination="m6B-dz-bVU" id="vVF-Z7-ZyH"/>
                         <outlet property="mixIceLabel" destination="xR3-jB-oTl" id="en4-He-aYz"/>
                         <outlet property="mixLemonLabel" destination="owz-p4-jJa" id="Qqj-EZ-lKN"/>
+                        <outlet property="weatherImageView1" destination="tMv-LL-5Pl" id="lbS-48-GlN"/>
+                        <outlet property="weatherImageView2" destination="UIL-18-gMR" id="tX8-eq-Svu"/>
+                        <outlet property="weatherImageView3" destination="MyF-4e-7xZ" id="qJz-B9-dcM"/>
+                        <outlet property="weatherImageView4" destination="CSF-Id-kzX" id="tIn-EV-rO4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
