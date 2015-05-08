@@ -148,12 +148,19 @@ class ViewController: UIViewController {
     //Start day action
     //no dejar que funcione si no tienes al menos un limón y un cubito de hielo
     @IBAction func startDayButtonPressed() {
-        haveCash += GameBrain.acidityMatch(Factory.customerArrayCreator(), acidityMixString: GameBrain.acidityCalculator(mixLemon, mixIce: mixIce))
-        mixIce = 0
-        mixLemon = 0
-        buyIce = 0
-        buyLemons = 0
-        updateView()
+        
+        if mixIce > 0 && mixLemon > 0 {
+            haveCash += GameBrain.acidityMatch(Factory.customerArrayCreator(), acidityMixString: GameBrain.acidityCalculator(mixLemon, mixIce: mixIce))
+            mixIce = 0
+            mixLemon = 0
+            buyIce = 0
+            buyLemons = 0
+            updateView()
+        }
+        else {
+            println("you need something in your mix!")
+        }
+
 
 
     }
@@ -170,6 +177,11 @@ class ViewController: UIViewController {
         mixIceLabel.text = "\(mixIce)"
     }
     
+    func showWarningNoMix(heather: String = "Warning", message: String){
+        var alert = UIAlertController(title: heather, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
 
 }
