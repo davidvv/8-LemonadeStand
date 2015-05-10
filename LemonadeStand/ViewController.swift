@@ -40,6 +40,8 @@ class ViewController: UIViewController {
     var mixLemon = 0
     var mixIce = 0
     
+    var weatherValue:Double = 0
+    
     
     
     
@@ -155,10 +157,21 @@ class ViewController: UIViewController {
             mixLemon = 0
             buyIce = 0
             buyLemons = 0
+            
+            println("we have a weather value of \(weatherValue)")
+
+//            var weatherFactor = Factory.weather()
+//            if weatherFactor = 0.6 {
+//                var weatherImage: UIImage = UIImage(named: "Cold")
+//            }
+//            else if weatherFactor = 1
+            
+            
             updateView()
         }
         else {
             println("you need something in your mix!")
+            showWarningNoMix(heather: "Make your mix", message: "you don't have enough ingredients in your mix, no one will but it!")
         }
 
 
@@ -182,6 +195,7 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
     
 
 }
