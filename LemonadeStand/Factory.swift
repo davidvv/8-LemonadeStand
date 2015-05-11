@@ -9,6 +9,8 @@
 import Foundation
 
 class Factory {
+ 
+    
     
     class func weather() -> Int {
         var maxCustomers = 10
@@ -58,6 +60,7 @@ class Factory {
             println("al cliente le gusta \(customer?.tasteRangeString)")
         }
         println("he creado un cliente que\(customer?.tasteRangeString), número de gusto \(customer?.tasteRange)")
+
         return customer!
     }
     
