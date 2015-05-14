@@ -160,6 +160,8 @@ class ViewController: UIViewController {
             
             var gameBrainTuple = GameBrain.acidityMatch(Factory.customerArrayCreator(), acidityMixString: GameBrain.acidityCalculator(mixLemon, mixIce: mixIce))
             
+            weatherImage = gameBrainTuple.1
+            haveCash += gameBrainTuple.0
             //haveCash += GameBrain.acidityMatch(Factory.customerArrayCreator(), acidityMixString: GameBrain.acidityCalculator(mixLemon, mixIce: mixIce))
             mixIce = 0
             mixLemon = 0

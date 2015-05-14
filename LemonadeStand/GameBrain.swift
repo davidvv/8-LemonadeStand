@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class GameBrain{
     
@@ -30,8 +31,11 @@ class GameBrain{
 
     }
     
-    class func acidityMatch(customers:[Customer], acidityMixString: String) -> Int {
-        var customers = Factory.customerArrayCreator()
+    class func acidityMatch(weatherTuple:([Customer],UIImage), acidityMixString: String) -> (Int,UIImage) {
+        var weatherTuple = Factory.customerArrayCreator()
+        var customers = weatherTuple.0
+        var weatherImage = weatherTuple.1
+        
         var buyers = 0
         for var index = 0; index < customers.count; index++ {
             if customers[index].tasteRangeString == acidityMixString {
@@ -39,6 +43,6 @@ class GameBrain{
             }
         }
         println("\(buyers) customers bought lemonade")
-        return buyers
+        return (buyers, weatherImage)
     }
 }
